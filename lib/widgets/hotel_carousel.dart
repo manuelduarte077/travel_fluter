@@ -14,7 +14,7 @@ class HotelCarousel extends StatelessWidget {
               Text(
                 'Exclusive Hotels',
                 style: TextStyle(
-                  fontSize: 22.0,
+                  fontSize: 26.0,
                   fontWeight: FontWeight.bold,
                   letterSpacing: 1.5,
                 ),
@@ -24,9 +24,7 @@ class HotelCarousel extends StatelessWidget {
                 child: Text(
                   'See All',
                   style: TextStyle(
-                      color: Theme
-                          .of(context)
-                          .primaryColor,
+                      color: Theme.of(context).primaryColor,
                       fontSize: 16.0,
                       fontWeight: FontWeight.w600,
                       letterSpacing: 1.0),
@@ -36,7 +34,7 @@ class HotelCarousel extends StatelessWidget {
           ),
         ),
         Container(
-          height: 300.0,
+          height: 325.0,
           child: ListView.builder(
             scrollDirection: Axis.horizontal,
             itemCount: hotels.length,
@@ -81,8 +79,16 @@ class HotelCarousel extends StatelessWidget {
                               Text(
                                 '\$${hotel.price} / nigth',
                                 style: TextStyle(
-                                    fontSize: 18.0,
-                                    fontWeight: FontWeight.w600,
+                                  fontSize: 18.0,
+                                  fontWeight: FontWeight.w600,
+                                ),
+                              ),
+                              SizedBox(height: 2.0),
+                              Text(
+                                hotel.city,
+                                style: TextStyle(
+                                  fontSize: 18.0,
+                                  fontWeight: FontWeight.w600,
                                 ),
                               )
                             ],

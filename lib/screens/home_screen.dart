@@ -60,7 +60,7 @@ class _HomeScreenState extends State<HomeScreen> {
               child: Text(
                 "What you would like to find?",
                 style: TextStyle(
-                  fontSize: 25.0,
+                  fontSize: 26.0,
                   fontWeight: FontWeight.bold,
                 ),
               ),
